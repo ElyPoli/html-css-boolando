@@ -20,12 +20,12 @@ body {
 /* A */
 a {
     text-decoration: none;
-    color: #ffff;
+    color: #ffffff;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #ffff;
+    color: #ffffff;
 }
 /*****/
 
@@ -41,6 +41,7 @@ nav {
     z-index: 2;
     top: 0;
     width: 100%;
+    z-index: 3;
 }
 
 nav .flex {
@@ -84,8 +85,12 @@ main .flex {
 }
 
 .card {
-    padding: 0 .6rem 3rem 0;
+    padding-bottom: 3rem;
     max-width: calc(100% / 3);
+}
+
+.position-r {
+    position: relative;
 }
 
 .card img {
@@ -94,12 +99,28 @@ main .flex {
     padding-bottom: .3rem;
 }
 
+.card-img-standard {
+    display: block;
+}
+
+.card-img-hover {
+    display: none;
+}
+
+.change-image:hover .card-img-standard {
+    display: none;
+}
+
+.change-image:hover .card-img-hover {
+    display: block;
+}
+
 .card h3 {
     text-transform: uppercase;
     padding: .2rem 0;
 }
 
-.card p:last-of-type {
+.card > p:last-of-type {
     color: #ff0000;
     font-weight: bold;
 }
@@ -110,5 +131,45 @@ main .flex {
     font-weight: normal;
 }
 
+.label-sale {
+    background-color: #ff0000;
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+}
+
+.lable-sustainable {
+    background-color: #008000;
+    position: absolute;
+    bottom: 150px;
+    left: 48px;
+}
+
+.label-sale, .lable-sustainable {
+    padding: .3rem .4rem;
+}
+
+.label-sale p, .lable-sustainable p {
+    font-size: .8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.lable-heart {
+    background-color: #ffffff;
+    padding: .6rem .8rem;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.lable-heart i {
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.label-sale, .lable-sustainable, .lable-heart {
+    z-index: 2;
+}
 
 /* End Main */
