@@ -38,9 +38,9 @@ nav {
     -o-box-shadow: 0px 8px 10px 0px #d2d2d2;
     box-shadow: 0px 8px 10px 0px #d2d2d2;
     position: fixed;
-    z-index: 2;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 nav .flex {
@@ -74,7 +74,7 @@ nav ul a {
 
 /* Start Main */
 main {
-    padding-top: 8rem;
+    padding: 8rem 0 5rem 0;
 }
 
 main .flex {
@@ -130,9 +130,6 @@ main .flex {
     font-weight: normal;
 }
 
-
-
-/*****************/
 .label {
     position: absolute;
     bottom: 150px;
@@ -172,3 +169,50 @@ main .flex {
     color: #ff0000;
 }
 /* End Main */
+
+/* Start Footer */
+footer {
+    background-color: #1a1a1a;
+    padding-top: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+footer .flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3, h4 {
+    color: #ffffff;
+}
+
+footer h3 {
+    font-size: 1rem;
+    padding-left: .3rem;
+}
+
+footer h4 {
+    font-size: .8rem;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div > div:nth-of-type(1) ul a {
+    font-size: 1.3rem;
+}
+
+footer ul a {
+    display: inline-block;
+    padding: .5rem .3rem 1.8rem .3rem;
+    font-size: .8rem;
+}
+/* End Footer */
