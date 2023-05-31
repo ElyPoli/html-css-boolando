@@ -84,7 +84,7 @@ main .flex {
 }
 
 .card {
-    padding-bottom: 3rem;
+    padding: 0 .5rem 3rem .5rem;
     max-width: calc(100% / 3);
 }
 
@@ -130,28 +130,29 @@ main .flex {
     font-weight: normal;
 }
 
-.label-sale {
-    background-color: #ff0000;
+
+
+/*****************/
+.label {
     position: absolute;
     bottom: 150px;
-    left: 0;
+    left: 8px;
+}
+
+.label p {
+    display: inline-block;
+    padding: .3rem .4rem;
+    font-size: .8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.label-sale {
+    background-color: #ff0000;
 }
 
 .lable-sustainable {
     background-color: #008000;
-    position: absolute;
-    bottom: 150px;
-    left: 48px;
-}
-
-.label-sale, .lable-sustainable {
-    padding: .3rem .4rem;
-}
-
-.label-sale p, .lable-sustainable p {
-    font-size: .8rem;
-    font-weight: bold;
-    color: #ffffff;
 }
 
 .lable-heart {
@@ -159,7 +160,7 @@ main .flex {
     padding: .6rem .8rem;
     position: absolute;
     top: 20px;
-    right: 0;
+    right: 8px;
 }
 
 .lable-heart i {
@@ -170,5 +171,4 @@ main .flex {
 .lable-heart i:hover {
     color: #ff0000;
 }
-
 /* End Main */
